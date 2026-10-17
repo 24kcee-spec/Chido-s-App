@@ -7,10 +7,23 @@ import {
   CheckCircle2, 
   GraduationCap, 
   Search,
-  CalendarCheck
+  CalendarCheck,
+  FolderTree,
+  Sparkles,
+  Bookmark
 } from 'lucide-react';
 
-export type ActiveTab = 'courses' | 'documents' | 'tax-calculator' | 'ifrs-standards' | 'audit-matrix' | 'practice-quiz' | 'study-planner';
+export type ActiveTab = 
+  | 'courses' 
+  | 'documents' 
+  | 'explorer'
+  | 'calculators' 
+  | 'ifrs-standards' 
+  | 'audit-matrix' 
+  | 'flashcards'
+  | 'cheatsheets'
+  | 'practice-quiz' 
+  | 'study-planner';
 
 interface HeaderProps {
   activeTab: ActiveTab;
@@ -32,11 +45,14 @@ export const Header: React.FC<HeaderProps> = ({
   const tabs = [
     { id: 'courses', label: 'Course Tracks', icon: GraduationCap, badge: '6 Tracks' },
     { id: 'documents', label: 'Study Library', icon: FileText, badge: `${completedDocsCount}/${totalDocsCount}` },
-    { id: 'tax-calculator', label: 'ZimTax & Capital Allowances', icon: Calculator, badge: 'Simulator' },
-    { id: 'ifrs-standards', label: 'IFRS & Proformas', icon: BookOpen, badge: 'IAS/IFRS' },
+    { id: 'explorer', label: 'Git Folder Tree', icon: FolderTree, badge: '8 Folders' },
+    { id: 'calculators', label: 'Financial Solvers', icon: Calculator, badge: '5 Tools' },
+    { id: 'ifrs-standards', label: 'IFRS Proformas', icon: BookOpen, badge: 'Standards' },
     { id: 'audit-matrix', label: 'Audit & Assertions', icon: Scale, badge: 'ISA/CPC' },
-    { id: 'practice-quiz', label: 'Exam Question Bank', icon: CheckCircle2, badge: 'Practice' },
-    { id: 'study-planner', label: 'Study Planner', icon: CalendarCheck, badge: 'Track' },
+    { id: 'flashcards', label: 'Flashcards', icon: Sparkles, badge: 'Recall' },
+    { id: 'cheatsheets', label: 'Cheatsheets & Cases', icon: Bookmark, badge: 'Summary' },
+    { id: 'practice-quiz', label: 'Question Bank', icon: CheckCircle2, badge: 'Practice' },
+    { id: 'study-planner', label: 'Study Planner', icon: CalendarCheck, badge: 'Tracker' },
   ];
 
   return (
@@ -86,8 +102,8 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Progress Pill */}
           <div className="hidden lg:flex items-center gap-2 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-lg text-emerald-800 text-xs">
             <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="font-semibold">Revision Progress:</span>
-            <span>{Math.round((completedDocsCount / (totalDocsCount || 1)) * 100)}% complete</span>
+            <span className="font-semibold">Revision:</span>
+            <span>{Math.round((completedDocsCount / (totalDocsCount || 1)) * 100)}% done</span>
           </div>
         </div>
 
@@ -100,17 +116,17 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id as ActiveTab)}
-                className={`flex items-center gap-2 px-3 py-2 rounded-lg whitespace-nowrap transition-all duration-150 ${
+                className={`flex items-center gap-2 px-3 py-1.5 rounded-lg whitespace-nowrap transition-all duration-150 cursor-pointer ${
                   isActive
                     ? 'bg-indigo-600 text-white font-semibold shadow-xs'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                 }`}
               >
-                <Icon className={`w-4 h-4 ${isActive ? 'text-white' : 'text-slate-500'}`} />
+                <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-white' : 'text-slate-500'}`} />
                 <span>{tab.label}</span>
                 {tab.badge && (
                   <span
-                    className={`text-[10px] px-1.5 py-0.5 rounded-full font-medium ${
+                    className={`text-[9px] px-1.5 py-0.2 rounded-full font-medium ${
                       isActive
                         ? 'bg-indigo-800/80 text-indigo-100'
                         : 'bg-slate-200 text-slate-700'

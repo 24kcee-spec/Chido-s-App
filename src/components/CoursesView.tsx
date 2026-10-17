@@ -37,11 +37,11 @@ export const CoursesView: React.FC<CoursesViewProps> = ({ onSelectCourse, onNavi
 
           <div className="flex flex-wrap items-center gap-3">
             <button
-              onClick={() => onNavigateToTab('tax-calculator')}
+              onClick={() => onNavigateToTab('calculators')}
               className="inline-flex items-center gap-2 bg-indigo-500 hover:bg-indigo-600 text-white font-medium px-4 py-2.5 rounded-xl text-xs sm:text-sm shadow-md transition-all cursor-pointer"
             >
               <Calculator className="w-4 h-4" />
-              <span>Launch ZimTax Simulator</span>
+              <span>Launch Financial Solvers</span>
             </button>
             <button
               onClick={() => onNavigateToTab('documents')}
@@ -180,7 +180,7 @@ export const CoursesView: React.FC<CoursesViewProps> = ({ onSelectCourse, onNavi
 
                 {course.id === 'cac-4102' ? (
                   <button
-                    onClick={() => onNavigateToTab('tax-calculator')}
+                    onClick={() => onNavigateToTab('calculators')}
                     className="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 font-medium hover:bg-emerald-200 transition-colors cursor-pointer"
                   >
                     Open Tax Calculator

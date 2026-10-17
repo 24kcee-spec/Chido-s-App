@@ -2,13 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { Header, ActiveTab } from './components/Header';
 import { CoursesView } from './components/CoursesView';
 import { DocumentLibraryView } from './components/DocumentLibraryView';
-import { TaxCalculatorView } from './components/TaxCalculatorView';
+import { DirectoryExplorerView } from './components/DirectoryExplorerView';
+import { CalculatorsHubView } from './components/CalculatorsHubView';
 import { IFRSStandardsView } from './components/IFRSStandardsView';
 import { AuditMatrixView } from './components/AuditMatrixView';
+import { FlashcardsView } from './components/FlashcardsView';
+import { CheatsheetsView } from './components/CheatsheetsView';
 import { PracticeQuizView } from './components/PracticeQuizView';
 import { StudyPlannerView } from './components/StudyPlannerView';
 import { DOCUMENTS_CATALOG } from './data/documentsCatalog';
-import { GraduationCap, Heart, FolderTree } from 'lucide-react';
+import { GraduationCap, Heart, GitBranch } from 'lucide-react';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<ActiveTab>('courses');
@@ -126,11 +129,17 @@ export const App: React.FC = () => {
           />
         )}
 
-        {activeTab === 'tax-calculator' && <TaxCalculatorView />}
+        {activeTab === 'explorer' && <DirectoryExplorerView />}
+
+        {activeTab === 'calculators' && <CalculatorsHubView />}
 
         {activeTab === 'ifrs-standards' && <IFRSStandardsView />}
 
         {activeTab === 'audit-matrix' && <AuditMatrixView />}
+
+        {activeTab === 'flashcards' && <FlashcardsView />}
+
+        {activeTab === 'cheatsheets' && <CheatsheetsView />}
 
         {activeTab === 'practice-quiz' && <PracticeQuizView />}
 
@@ -138,7 +147,7 @@ export const App: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-slate-200 mt-auto py-6">
+      <footer className="bg-white border-t border-slate-200 mt-auto py-6 print:hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div className="flex items-center gap-2">
             <GraduationCap className="w-4 h-4 text-indigo-600" />
@@ -154,28 +163,28 @@ export const App: React.FC = () => {
               Courses
             </button>
             <button
-              onClick={() => setActiveTab('documents')}
+              onClick={() => setActiveTab('explorer')}
               className="hover:text-indigo-600 cursor-pointer"
             >
-              Documents ({DOCUMENTS_CATALOG.length})
+              Git Tree
             </button>
             <button
-              onClick={() => setActiveTab('tax-calculator')}
+              onClick={() => setActiveTab('calculators')}
               className="hover:text-indigo-600 cursor-pointer"
             >
-              ZimTax
+              Solvers
             </button>
             <button
-              onClick={() => setActiveTab('ifrs-standards')}
+              onClick={() => setActiveTab('flashcards')}
               className="hover:text-indigo-600 cursor-pointer"
             >
-              IFRS
+              Flashcards
             </button>
             <button
-              onClick={() => setActiveTab('practice-quiz')}
+              onClick={() => setActiveTab('cheatsheets')}
               className="hover:text-indigo-600 cursor-pointer"
             >
-              Quizzes
+              Cheatsheets
             </button>
           </div>
         </div>
