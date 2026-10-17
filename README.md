@@ -45,53 +45,36 @@ A structured, curated academic repository and digital study hub for Honours in A
 ├── 07_CTA_ICAZ_Board_Exam_Preparation/
 │   └── (CTA Level 1 Mock Exam 2 Scenario & Required, ZCTA Level 2 combined module, Question Bank 1 & 3)
 │
-└── 08_General_Academic_and_Schedules/
-    └── (Academic calendars, master timetables, general practice questions and tutorials)
+├── 08_General_Academic_and_Schedules/
+│   └── (Academic calendars, master timetables, general practice questions and tutorials)
+│
+├── 09_CAC4006_Research_Project/
+│   └── README.md (Cap-stone dissertation methodology, empirical topic guide & 5-chapter framework)
+│
+├── 10_CAC4203_Advanced_Auditing/
+│   └── README.md (Specialized assurance ISA 800/805/810, forensic audit, public sector VFM, ESG assurance)
+│
+├── 11_CAC4204_Financial_Management/
+│   └── README.md (Advanced DCF/APV, WACC & CAPM, capital structure MM theories, M&A valuation, forex hedging)
+│
+└── 12_CAC4205_Strategic_Management_Accounting/
+    └── README.md (Target costing, life-cycle costing, throughput accounting TPAR, balanced scorecard, beyond budgeting)
 ```
 
 ---
 
-## 🎓 Course Overview & Curriculum Focus
+## 🎓 Complete Part IV (Final Year) Curriculum Mapping
 
-### 1. CAC 4101 & CAC 4201: Financial Reporting & IFRS
-- **IFRS 10 & 3:** Business combinations, acquisition accounting, Goodwill vs Bargain purchase, Non-Controlling Interest (NCI) fair value vs proportionate share, intra-group eliminations, and unrealised profit in inventory (PURP).
-- **IFRS 15:** 5-step revenue recognition model, distinct performance obligations, transaction price allocation based on standalone selling price (SSP), contract assets and liabilities.
-- **IFRS 16:** Lessee single model: Right-of-Use (ROU) asset and lease liability amortisation schedules.
-- **IAS 12:** Deferred tax balance sheet approach: taxable and deductible temporary differences, tax bases, and deferred tax on revaluation surplus.
-- **IPSAS:** Public sector financial statements, fund accounting, and government assistance under IPSAS 1 and IPSAS 12.
-
-### 2. CAC 4102 & ICAZ CTA ZimTax: Zimbabwe Taxation
-- **Statute:** Governed by the Income Tax Act [Chapter 23:06], Finance Act, and Capital Gains Tax Act.
-- **Gross Income (Sec 8(1)):** Total amount received or accrued from a source within or deemed to be within Zimbabwe, excluding capital receipts (*Lever Brothers* test).
-- **General Deductions (Sec 15(2)(a)):** Expenditure and losses actually incurred in the production of income, not being of a capital nature (*Subun v COT*).
-- **Capital Allowances (4th Schedule):** Special Initial Allowance (25%), Wear & Tear, Deemed cost restrictions on passenger motor vehicles ($10,000 / $25,000), scrapping allowances, and recoupment.
-- **Special Sectors:** Farming livestock standard values, drought relief, mining capital redemption allowances, deceased estates (Sec 10), and Double Taxation Relief (Sec 91).
-
-### 3. CAC 4103: Auditing & Professional Assurance
-- **Framework:** International Standards on Auditing (ISA) & IESBA Code of Professional Conduct (CPC).
-- **Assertions:** Classes of transactions (Occurrence, Completeness, Accuracy, Cut-off, Classification) & Account Balances (Existence, Rights & Obligations, Completeness, Valuation & Allocation).
-- **Audit Materiality (ISA 320):** Determining overall planning materiality, performance materiality (50–75%), and trivial misstatement threshold.
-- **Auditor Reporting (ISA 700 / 705):** Unmodified opinion, qualified opinion, adverse opinion, disclaimer of opinion, and Key Audit Matters (ISA 701).
-
-### 4. CAC 4202: Accounting Information Systems (AIS)
-- **Controls:** COSO Internal Control Framework, General IT Controls (ITGC) vs Application Controls.
-- **Transaction Cycles:** Revenue cycle, Expenditure cycle (3-way match, purchase orders, receiving reports), and Conversion/Payroll cycles.
-- **IT Audit:** Computer-Assisted Audit Techniques (CAATs) and fraud prevention.
-
----
-
-## 💻 Web Study Hub Application
-
-This repository includes an interactive React + Vite + Tailwind revision web application containing:
-1. **ZimTax & Capital Allowances Simulator:** Interactive tax computation and 4th schedule capital allowances calculator.
-2. **IFRS Standards Explorer & Proformas:** Searchable standard rules with step-by-step proforma debit/credit journal entries.
-3. **Audit Assertions & Procedures Generator:** Select financial statement area & assertion to get tailored substantive procedures.
-4. **Practice Exam Bank:** Multiple choice and scenario questions with instant grading and step-by-step model solutions.
-5. **Study Planner & File Tracker:** Personal study status tracking (Not Started, Reading, Mastered) and personal revision notes.
-
-To run the Study Hub application locally:
-```bash
-npm install
-npm run dev
-```
-The app will be available at `http://localhost:3000`.
+| Semester | Course Code | Course Title | Status in Hub |
+| :--- | :--- | :--- | :--- |
+| **Part 4.1 (1st Sem)** | `CAC 4101` | Financial Reporting | ✅ Full Materials & IFRS Guide |
+| **Part 4.1 (1st Sem)** | `CAC 4102` | Taxation I | ✅ Full Materials & Tax Solver |
+| **Part 4.1 (1st Sem)** | `CAC 4103` | Audit Skills, Theory and Practice | ✅ Full Materials & Assertions Matrix |
+| **Part 4.1 (1st Sem)** | `CAC 4104` | Accounting Information Systems | ✅ Full Chapters & Quizzes (Folder 04) |
+| **Part 4.1 (1st Sem)** | `CAC 4105` | Management and Cost Accounting II | ✅ Full Materials & CVP Solver |
+| **Part 4 Full Year** | `CAC 4006` | Research Project (Dissertation) | 🆕 Study Guide & Chapter Outline Added |
+| **Part 4.2 (2nd Sem)** | `CAC 4201` | Advanced Financial Accounting | ✅ Past Papers & Tutorials (Folder 06) |
+| **Part 4.2 (2nd Sem)** | `CAC 4202` | Taxation II | ✅ Specialized Farming & Mining Materials |
+| **Part 4.2 (2nd Sem)** | `CAC 4203` | Advanced Auditing | 🆕 Study Guide & ISA 800 Series Added |
+| **Part 4.2 (2nd Sem)** | `CAC 4204` | Financial Management | 🆕 Study Guide & Valuation/WACC Added |
+| **Part 4.2 (2nd Sem)** | `CAC 4205` | Strategic Management Accounting | 🆕 Study Guide & Target Costing Added |

@@ -269,6 +269,38 @@ const FOLDER_TREE: TreeNode = {
         { name: "Amended Academic Calendar Oct 2023.pdf", path: "08_General_Academic_and_Schedules/Amended Academic Calendar Oct 2023.pdf", isFolder: false, fileType: "PDF" },
         { name: "Second Semester First Phase Master Teaching Timetable - 2023- 2024.xlsx", path: "08_General_Academic_and_Schedules/Second Semester First Phase Master Teaching Timetable - 2023- 2024.xlsx", isFolder: false, fileType: "XLSX" }
       ]
+    },
+    {
+      name: "09_CAC4006_Research_Project",
+      path: "09_CAC4006_Research_Project",
+      isFolder: true,
+      children: [
+        { name: "README.md", path: "09_CAC4006_Research_Project/README.md", isFolder: false, fileType: "DOCX" }
+      ]
+    },
+    {
+      name: "10_CAC4203_Advanced_Auditing",
+      path: "10_CAC4203_Advanced_Auditing",
+      isFolder: true,
+      children: [
+        { name: "README.md", path: "10_CAC4203_Advanced_Auditing/README.md", isFolder: false, fileType: "DOCX" }
+      ]
+    },
+    {
+      name: "11_CAC4204_Financial_Management",
+      path: "11_CAC4204_Financial_Management",
+      isFolder: true,
+      children: [
+        { name: "README.md", path: "11_CAC4204_Financial_Management/README.md", isFolder: false, fileType: "DOCX" }
+      ]
+    },
+    {
+      name: "12_CAC4205_Strategic_Management_Accounting",
+      path: "12_CAC4205_Strategic_Management_Accounting",
+      isFolder: true,
+      children: [
+        { name: "README.md", path: "12_CAC4205_Strategic_Management_Accounting/README.md", isFolder: false, fileType: "DOCX" }
+      ]
     }
   ]
 };
