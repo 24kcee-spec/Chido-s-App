@@ -1,0 +1,8 @@
+{
+  "name": "Chido's Accounting & CTA Study Hub",
+  "description": "Comprehensive accounting, auditing, taxation, and CTA exam preparation platform with syllabus guides, interactive tax & capital allowances calculators, IFRS standards explorer, audit assertions matrix, and practice question banks.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
